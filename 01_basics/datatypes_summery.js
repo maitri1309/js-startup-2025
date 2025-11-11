@@ -28,3 +28,5 @@ const myFunction=function(){
 console.log(typeof outsideTemp)
 console.log(typeof scoreValue)
 console.log(typeof myFunction);
+console.log(typeof fruits);
+console.log(typeof anotherId);
