@@ -30,3 +30,29 @@ console.log(typeof scoreValue)
 console.log(typeof myFunction);
 console.log(typeof fruits);
 console.log(typeof anotherId);
+
+//memory stack and heap
+/*
+stack=> primitive
+heap=>non-primitive
+*/
+//example
+let myYouTubeName="maitridakoria"
+
+let anothername=myYouTubeName
+anothername="chaiaurcode"
+console.log(myYouTubeName);
+console.log(anothername);
+
+let userOne={
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+let userTwo=userOne
+
+userTwo.email="maitri@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+ 
