@@ -1,0 +1,44 @@
+#red {
+    padding: 12px 25px;            /* Box shape */
+    background: #ec0404;
+    color: white;
+    font-size: 16px;
+    border: solid;
+    border-color: black;
+    border-radius: 8px;            /* Slightly rounded corners */
+    cursor: pointer;
+    margin: 2px;
+}
+#orange {
+    padding: 12px 25px;            /* Box shape */
+    background: #f77b07;
+    color: white;
+    font-size: 16px;
+    border: solid;
+    border-color: black;
+    border-radius: 8px;            /* Slightly rounded corners */
+    cursor: pointer;
+    margin: 2px;
+}
+#blue {
+    padding: 12px 25px;            /* Box shape */
+    background: #0269f0;
+    color: white;
+    font-size: 16px;
+    border: solid;
+    border-color: black;
+    border-radius: 8px;            /* Slightly rounded corners */
+    cursor: pointer;
+    margin: 2px;
+}
+#green {
+    padding: 12px 25px;            /* Box shape */
+    background: #49e135;
+    color: white;
+    font-size: 16px;
+    border: solid;
+    border-color: black;
+    border-radius: 8px;            /* Slightly rounded corners */
+    cursor: pointer;
+    margin: 2px;
+}
