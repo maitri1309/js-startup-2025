@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+
+<body style="background-color: chartreuse; color:brown;">
+    <h2>Amazing Images</h2>
+    <div>
+        <ul id="images">
+            <li><img src="i1.jpeg" alt="sketch" id="sketch" width="100px"></li>
+            <li><img src="i2.jpeg" alt="jfish" id="jfish" width="100px"></li>
+            <li><img src="i3.jpg" alt="clock" id="clock" width="100px"></li>
+            <li><img src="i4.jpg" alt="frame" id="frame" width="100px"></li>
+            <li><img src="i5.jpg" alt="dframe" id="dframe" width="100px"></li>
+            <li><a style="color: chocolate;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+    <!-- onclick="alert('clock')"
+    attachEvent()
+    => type,timestamp,deafultPrevented
+    => target,toElement,srcElement,currentTarget
+    => clientX,clientY,screenX,screenY
+    => altkey,ctrlkey,shiftkey,keyCode
+    => jQuery-on -->
+
+</body>
+<script>
+    // document.getElementById('clock').onclick=function(){
+    //     alert("clock clocked")
+    // }
+
+    // document.getElementById('images').addEventListener('click', function (e) {
+    //     // alert("clock clocked again")
+    //     console.log("clocked inside the ul");
+    // }, false)
+
+    // document.getElementById('clock').addEventListener('click', function (e) {
+    //     console.log("Clock clicked");
+    //     e.stopPropagation();
+    // }, false)
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     console.log("google clicked");
+    // },false)
+
+    document.querySelector('#images').addEventListener('click', function (e) {
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove();
+        }
+
+        //removeIt.parentNode.removeChild(removeIt)
+    }, false)
+</script>
+
+</html>
